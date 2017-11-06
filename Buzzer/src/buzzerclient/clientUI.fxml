@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="590.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buzzerclient.ClientUIController">
+   <children>
+      <HBox prefHeight="40.0" prefWidth="590.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="590.0">
+               <children>
+                  <Label text="BUZZER" textFill="#5b9793">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="590.0">
+               <children>
+                  <Label fx:id="teamName" text="TeamName" textFill="#5b9793">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Button fx:id="button" mnemonicParsing="false" prefHeight="260.0" prefWidth="260.0" style="-fx-background-radius: 30em; -fx-background-color: #1e90ff;" />
+      <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="590.0">
+         <children>
+            <Label fx:id="label" text="Click the CIRCLE or Press SPACE BAR">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</VBox>
