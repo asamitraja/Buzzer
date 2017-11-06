@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buzzerclient.FrontPageController">
+   <children>
+      <MenuBar prefHeight="24.0" prefWidth="590.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem fx:id="home" mnemonicParsing="false" text="Home" />
+                  <MenuItem fx:id="reset" mnemonicParsing="false" text="Reset" />
+            </items>
+          </Menu>
+        </menus>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </MenuBar>
+      <Label text="BUZZER" textFill="#5b9793">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="590.0" spacing="40.0">
+         <children>
+            <Label text="Team Name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="81.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="teamNamefield" prefHeight="31.0" prefWidth="200.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="590.0" spacing="40.0">
+         <children>
+            <Label text="Coordinators IP Address">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="ipAdrField1" prefHeight="31.0" prefWidth="50.0" text="192">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="ipAdrField2" prefHeight="31.0" prefWidth="50.0" text="168">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="ipAdrField3" prefHeight="31.0" prefWidth="50.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="ipAdrField4" prefHeight="31.0" prefWidth="50.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Button fx:id="okButton" alignment="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="75.0" text="OK">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.38" contrast="0.43" />
+         </effect>
+         <VBox.margin>
+            <Insets left="320.0" top="15.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</VBox>

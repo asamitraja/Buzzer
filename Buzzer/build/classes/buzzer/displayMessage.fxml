@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="315.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buzzer.DisplayMessageController">
+   <children>
+      <Label fx:id="label" text="hello world">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="okButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="75.0" text="OK">
+         <effect>
+            <ColorAdjust brightness="-0.38" contrast="0.43" />
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</VBox>

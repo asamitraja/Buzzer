@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="buzzer.FrontPageController">
+   <children>
+      <Label text="BUZZER" textFill="#5b9793">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Label>
+      <VBox prefHeight="124.0" prefWidth="590.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="113.0" prefWidth="590.0" spacing="20.0">
+               <children>
+                  <Button fx:id="coordinator" mnemonicParsing="false" prefHeight="35.0" prefWidth="157.0" text="COORDINATOR">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="-0.38" contrast="0.43" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="contestant" mnemonicParsing="false" prefHeight="35.0" prefWidth="157.0" text="CONTESTANT">
+                     <effect>
+                        <ColorAdjust brightness="-0.38" contrast="0.43" />
+                     </effect>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <SepiaTone />
+   </effect>
+</VBox>
